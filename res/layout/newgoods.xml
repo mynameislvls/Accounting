@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ededed" >
+
+    <LinearLayout
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#6dcaec"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="添加新品"
+            android:textColor="#5b5b5b"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/draw"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/name"
+        android:layout_below="@+id/li1"
+        android:layout_alignLeft="@+id/name" 
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/newGood"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/low_price"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:background="#6dcaec"
+        android:text="保存" />
+
+    <EditText
+        android:id="@+id/low_price"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/high_price"
+        android:layout_alignBottom="@+id/high_price"
+        android:layout_alignLeft="@+id/barcode"
+        android:background="@drawable/white"
+        android:ems="10"
+        android:hint="请输入进价" />
+
+    <EditText
+        android:id="@+id/high_price"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignRight="@+id/get_barcode"
+        android:layout_below="@+id/get_barcode"
+        android:layout_marginTop="14dp"
+        android:layout_toRightOf="@+id/name"
+        android:background="@drawable/white"
+        android:ems="10"
+        android:hint="请输入卖价" />
+
+    <Button
+        android:id="@+id/get_barcode"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/barcode"
+        android:layout_marginRight="14dp"
+        android:background="#6ecaec"
+        android:text="获取条形码"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/barcode"
+        android:layout_centerVertical="true"
+        android:background="@drawable/white"
+        android:ems="10"
+        android:hint="请输入商品名" />
+
+    <EditText
+        android:id="@+id/barcode"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/white"
+        android:ems="10"
+        android:textSize="13dp" >
+
+        <requestFocus />
+    </EditText>
+
+</RelativeLayout>

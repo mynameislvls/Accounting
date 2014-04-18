@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     android:background="#ebeeef">
+         <RelativeLayout
+        android:id="@+id/li1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#6dcaec"
+        android:orientation="horizontal"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:id="@+id/any"
+            android:textColor="#5b5b5b"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/out_excel"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/out"
+          android:layout_marginRight="5dp"
+          android:layout_centerVertical="true"
+           
+            android:layout_alignParentRight="true"></Button> </RelativeLayout>
+    
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"
+         android:divider="#aab3b7"
+        android:dividerHeight="1px"
+        android:fastScrollEnabled="true" >
+</ListView>
+</LinearLayout>
